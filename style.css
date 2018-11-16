@@ -1,0 +1,223 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 0.5em;
+  color: whitesmoke;
+  font-size: 48;
+  font-weight: bolder;
+}
+.searchbar {
+  width: 370px;
+  text-align: center;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+.searchbar input:focus {
+  outline: none;
+}
+.searchbar input::-webkit-search-cancel-button {
+  background-color: black;
+}
+.searchbar input {
+  margin-right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: white;
+  border: none;
+  width: 75%;
+}
+.searchbtn,
+.menubtn {
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 0;
+  color: blueviolet;
+  background: none;
+  border: none;
+}
+.searchbar button:focus {
+  outline: none;
+}
+.drop-down-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 370px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.drop-down-content table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+.drop-down-content tr td:nth-child(1) {
+  background: #f9f9f9;
+}
+.drop-down-content td {
+  padding: 10px;
+  font-size: 18;
+}
+.drop-down-content td:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-weight: bolder;
+}
+header {
+  height: 230px;
+  background-color: #333333;
+}
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  z-index: -1;
+  text-align: unset;
+  opacity: 0.9;
+}
+#main {
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.card-container {
+  display: grid;
+  grid-gap: 1.5em;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: inline-block;
+}
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #f9f9f9;
+  max-width: 250px;
+}
+.card h3 {
+  text-align: center;
+}
+.card p,
+h3 {
+  padding-left: 3px;
+  padding-right: 3px;
+  text-align: center;
+  color: #363636;
+}
+.card p {
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+footer {
+  text-align: center;
+  background: #333333;
+  margin-top: 20px;
+  padding: 5px;
+  color: #f9f9f9;
+}
+@media only screen and (min-width: 570px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Temperature Page CSS */
+#main1 {
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #35414a;
+}
+#main1 table {
+  margin: auto;
+  border: 1px solid #333333;
+  width: 40%;
+  border-collapse: collapse;
+}
+#main1 td {
+  padding: 10px;
+  font-size: 16;
+}
+#main1 td:nth-child(1) {
+  text-align: right;
+  padding-right: 5px;
+  color: red;
+  font-weight: 600;
+}
+#main1 td:nth-child(2) {
+  text-align: left;
+  padding-left: 5px;
+  color: grey;
+}
+#main1 tr:nth-child(odd) {
+  background-color: #d9edf7;
+}
+#main1 tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+#main1 input {
+  margin-right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #485761;
+  border: none;
+  width: 200px;
+  padding: 10px;
+  color: white;
+  margin: 5px;
+}
+#main1 input:focus,
+select:focus {
+  outline: none;
+}
+.input1 {
+  margin-bottom: 10px;
+}
+.input1 select {
+  background-color: #485761;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  color: white;
+  width: 180px;
+}
+option {
+  font-size: 18;
+}
