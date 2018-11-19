@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="../main.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- <img src="./mainimage.jpg" alt="" class="background-image" /> -->
+      <h1>Converter</h1>
+      <div class="searchbar">
+        <div class="searchbtn"><i class="fa fa-search"></i></div>
+        <input type="text" placeholder="Search..." />
+        <button class="menubtn" onclick="toggleCategory()" onblur="focusLost()">
+          <i class="fa fa-bars"> </i>
+        </button>
+        <div class="drop-down-content">
+          <table>
+            <tr>
+              <td>Category A</td>
+              <td>Category B</td>
+            </tr>
+            <tr>
+              <td>Category C</td>
+              <td>Category D</td>
+            </tr>
+            <tr>
+              <td>Category E</td>
+              <td>Category F</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </header>
+    <div id="main1">
+      <h2 id="pageHeading">Digital Conversion</h2>
+      <div class="input1">
+        <input type="text" id="inputValue" placeholder="Value" oninput="unitChange()"/>
+        <select id="inputUnit" onchange="unitChange()">
+          <option value="b">Bit</option>
+          <option value="B">Byte</option>
+          <option value="KB">KiloByte</option>
+          <option value="MB">MegaByte</option>
+          <option value="GB">GigaByte</option>
+          <option value="TB">TeraByte</option>
+
+        </select>
+      </div>
+      <table id="outputTable" style="display:none;">
+        <tr>
+          <td id="b"></td>
+          <td>Bit(b)</td>
+        </tr>
+        <tr>
+          <td id="B"></td>
+          <td>Byte(B)</td>
+        </tr>
+        <tr>
+          <td id="KB"></td>
+          <td>KiloByte(KB)</td>
+        </tr>
+        <tr>
+            <td id="MB"></td>
+            <td>MegaByte(MB)</td>
+        </tr>
+        <tr>
+            <td id="GB"></td>
+            <td>GigaByte(GB)</td>
+        </tr>
+        <tr>
+            <td id="TB"></td>
+            <td>TeraByte(TB)</td>
+        </tr>
+       </table>
+    </div>
+    </div>
+    <script src="digitalConversion.js"></script>
+  </body>
+</html>
