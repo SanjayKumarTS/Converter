@@ -10,7 +10,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="../main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   </head>
   <body>
     <header>
@@ -41,47 +40,39 @@
       </div>
     </header>
     <div id="main1">
-      <h2 id="pageHeading">Currency Conversion</h2>
+      <h2 id="pageHeading">Temperature</h2>
       <div class="input1">
         <input type="text" id="inputValue" placeholder="Value" oninput="unitChange()"/>
         <select id="inputUnit" onchange="unitChange()">
-          <option value="USD">US Dollar</option>
-          <option value="INR">Indian Rupee</option>
-          <option value="EUR">Euro</option>
-          <option value="JPY">Japan Yen</option>
-          <option value="GBP">Great Britain Pound</option>
-          <option value="KWD">Kuwait Dinar</option>
-
+          <option value="celcius">celcius</option>
+          <option value="fahrenheit">fahrenheit</option>
+          <option value="kelvin">kelvin</option>
         </select>
       </div>
-      <table id="outputTable" style="display: none;">
+      <table id="outputTable" style="display:none;">
         <tr>
-          <td id="USD"></td>
-          <td>US Dollar</td>
+          <td id="mph"></td>
+          <td>miles per hour</td>
         </tr>
         <tr>
-          <td id="INR"></td>
-          <td>Indian Rupee</td>
+          <td id="fps"></td>
+          <td>foot per second</td>
         </tr>
         <tr>
-          <td id="EUR"></td>
-          <td>Euro</td>
+          <td id="mps"></td>
+          <td>meter per second</td>
         </tr>
         <tr>
-            <td id="JPY"></td>
-            <td>Japan Yen</td>
+            <td id="kmph"></td>
+            <td>Kilometer per hour</td>
         </tr>
         <tr>
-            <td id="GBP"></td>
-            <td>Great Britain Pound</td>
+            <td id="knot"></td>
+            <td>knot</td>
         </tr>
-        <tr>
-            <td id="KWD"></td>
-            <td>Kuwait Dinar</td>
-        </tr>
-       </table>
+        </table>
     </div>
     </div>
-    <script src="currencyConversion.js"></script>
+    <script src="speedConversion.js"></script>
   </body>
 </html>
