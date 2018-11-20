@@ -10,7 +10,7 @@ function mphInput()
     var kmph = Number(inputValue) * 1.609;
     var knot = Number(inputValue) / 1.151;
     var fps = Number(inputValue) * 1.467;
-    document.getElementById("mph").parentNode.style.display = "none";
+    document.getElementById("mph").innerHTML = Number(inputValue);
     document.getElementById("mps").innerHTML = mps;
     document.getElementById("kmph").innerHTML = kmph;
     document.getElementById("knot").innerHTML = knot;
@@ -26,7 +26,7 @@ function fpsInput()
     var kmph = Number(inputValue) * 1.097;
     var knot = Number(inputValue) / 1.688;
     var mph = Number(inputValue) / 1.467;
-    document.getElementById("fps").parentNode.style.display = "none";
+    document.getElementById("fps").innerHTML = Number(inputValue);
     document.getElementById("mps").innerHTML = mps;
     document.getElementById("kmph").innerHTML = kmph;
     document.getElementById("knot").innerHTML = knot;
@@ -42,7 +42,7 @@ function mpsInput()
     var kmph = Number(inputValue) * 3.6;
     var knot = Number(inputValue) * 1.944;
     var mph = Number(inputValue) / 1.151;
-    document.getElementById("mps").parentNode.style.display = "none";
+    document.getElementById("mps").innerHTML = Number(inputValue);
     document.getElementById("fps").innerHTML = fps;
     document.getElementById("kmph").innerHTML = kmph;
     document.getElementById("knot").innerHTML = knot;
@@ -58,7 +58,7 @@ function kmphInput()
     var mps = Number(inputValue) / 3.6;
     var knot = Number(inputValue) / 1.852;
     var mph = Number(inputValue) / 1.609;
-    document.getElementById("kmph").parentNode.style.display = "none";
+    document.getElementById("kmph").innerHTML = Number(inputValue);
     document.getElementById("fps").innerHTML = fps;
     document.getElementById("mps").innerHTML = mps;
     document.getElementById("knot").innerHTML = knot;
@@ -74,7 +74,7 @@ function knotInput()
     var mps = Number(inputValue) / 1.944;
     var kmph = Number(inputValue) * 1.852;
     var mph = Number(inputValue) * 1.151;
-    document.getElementById("knot").parentNode.style.display = "none";
+    document.getElementById("knot").innerHTML = Number(inputValue);
     document.getElementById("fps").innerHTML = fps;
     document.getElementById("mps").innerHTML = mps;
     document.getElementById("kmph").innerHTML = kmph;

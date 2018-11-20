@@ -1,44 +1,6 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Converter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="../main.js"></script>
-  </head>
-  <body>
-    <header>
-      <!-- <img src="./mainimage.jpg" alt="" class="background-image" /> -->
-      <h1>Converter</h1>
-      <div class="searchbar">
-        <div class="searchbtn"><i class="fa fa-search"></i></div>
-        <input type="text" placeholder="Search..." />
-        <button class="menubtn" onclick="toggleCategory()" onblur="focusLost()">
-          <i class="fa fa-bars"> </i>
-        </button>
-        <div class="drop-down-content">
-          <table>
-            <tr>
-              <td>Category A</td>
-              <td>Category B</td>
-            </tr>
-            <tr>
-              <td>Category C</td>
-              <td>Category D</td>
-            </tr>
-            <tr>
-              <td>Category E</td>
-              <td>Category F</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </header>
+<?php 
+  include './heading.php';
+?>
     <div id="main1">
       <h2 id="pageHeading">Distance</h2>
       <div class="input1">
@@ -90,6 +52,6 @@
       </table>
     </div>
     </div>
-    <script src="DistanceConversion.js"></script>
+    <script src="distanceConversion.js"></script>
   </body>
 </html>
