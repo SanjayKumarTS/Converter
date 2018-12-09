@@ -2,7 +2,7 @@
   include './heading.php';
 ?>
     <div id="main1">
-      <h2>Area Conversion</h2>
+      <h2>Area</h2>
       <div class="input1">
         <input type="text" id="inputValue" placeholder="Value" oninput="unitChange()"/>
         <select id="inputUnit" onchange="unitChange()">

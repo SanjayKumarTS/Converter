@@ -2,7 +2,7 @@
   include './heading.php';
 ?>
     <div id="main1">
-      <h2 id="pageHeading">Number System Conversion</h2>
+      <h2 id="pageHeading">Number System</h2>
       <div class="input1">
         <input type="text" id="inputValue" placeholder="Value" oninput="unitChange()"/>
         <select id="inputUnit" onchange="unitChange()">
