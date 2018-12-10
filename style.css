@@ -259,3 +259,8 @@ option {
   width: 50%;
   float: right;
 }
+
+tr
+{
+  display: block;
+}
